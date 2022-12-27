@@ -14,14 +14,13 @@ class Snake():
 
 
     def create_snake(self):
-        x = 0
-        y = 0
+        x = -10
+        y = -10
         for turtle in range(0, 3):
-            position = (x, y)
+            position = (x, y)   
             self.add_segment(position)
-            x -= 20
-            
-        
+            x -= 20     
+                   
 
     def add_segment(self, position):
         new_turtle = Turtle(shape="square")
@@ -48,20 +47,24 @@ class Snake():
     
 
     def up(self):     
+        print(self.turtles[0].xcor(), self.turtles[0].ycor())
         if self.head.heading() != DOWN and abs(self.turtles[0].xcor() - self.turtles[1].xcor()) > 2:
             self.head.setheading(UP)
 
 
     def down(self):
+        print(self.turtles[0].xcor(), self.turtles[0].ycor())
         if self.head.heading() != UP and abs(self.turtles[0].xcor() - self.turtles[1].xcor()) > 2:
             self.head.setheading(DOWN)
 
 
     def left(self):
+        print(self.turtles[0].xcor(), self.turtles[0].ycor())
         if self.head.heading() != RIGHT and abs(self.turtles[0].ycor() - self.turtles[1].ycor()) > 2:
             self.head.setheading(LEFT)
 
 
     def right(self):
+        print(self.turtles[0].xcor(), self.turtles[0].ycor())
         if self.head.heading() != LEFT and abs(self.turtles[0].ycor() - self.turtles[1].ycor()) > 2:
             self.head.setheading(RIGHT)

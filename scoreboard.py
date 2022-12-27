@@ -11,7 +11,7 @@ class Scoreboard(Turtle):
         self.color("white")
         self.hideturtle()
         self.penup()
-        self.goto(x=0, y=275)
+        self.goto(x=0, y=285)
         self.string = "Score: " + str(self.current_score)
         self.write(self.string, font=FONT, align=ALIGNMENT)
 
