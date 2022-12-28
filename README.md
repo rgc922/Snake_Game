@@ -1,6 +1,6 @@
 My Snake Game
 
-This is my version of the classic Snake Game developed with Turtle Module using Pyhton. If you own a Nokia years ago, for sure you remember this classic game.
+This is my version of the classic Snake Game developed with Turtle Module using Pyhton. If you owned a Nokia years ago, for sure you remember this classic game.
 
 This is part of the Udemy Course 100 Days of Code: The complete Python Pro Bootcamp for 2023.
 
